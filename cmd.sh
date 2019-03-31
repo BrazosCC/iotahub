@@ -17,5 +17,5 @@ fi
 	--dbPassword ${DB_PASSWORD} \
 	--apiAddress ${IOTA_API} \
 	--minWeightMagnitude ${IOTA_MIN_WEIGHT_MAGNITUDE} \
-	--listenAddress 0.0.0.0:${HUB_PORT} \
+	--listenAddress 0.0.0.0:50051 \
 	--alsologtostderr

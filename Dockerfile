@@ -37,5 +37,7 @@ RUN bazel build -c opt //hub:hub
 
 COPY cmd.sh /home/appuser/
 
+EXPOSE 50051
+
 WORKDIR /home/appuser/hub
 CMD /home/appuser/cmd.sh
