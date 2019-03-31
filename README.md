@@ -1,4 +1,4 @@
-# link_iota_hub
+# iotahub
 
 This project is for building a Docker image that runs an IOTA Hub.
 
