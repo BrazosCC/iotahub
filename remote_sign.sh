@@ -12,5 +12,5 @@
     --signingProviderAddress ${IOTA_SIGNER_URL} \
     --signingServerChainCert /ssl/client.crt \
     --signingServerKeyCert /ssl/client.key \
-    --signingServerSslCert /ssl/ca.crt 
+    --signingServerSslCert /ssl/ca.crt \
 	--alsologtostderr
