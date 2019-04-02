@@ -35,9 +35,11 @@ WORKDIR /home/appuser/hub
 ENV PATH="/home/appuser/bin:${PATH}"
 RUN bazel build -c opt //hub:hub
 
-COPY cmd.sh /home/appuser/
+COPY cmd.sh /home/appuser/bin/
+COPY remote_sign.sh /home/appuser/bin/
 
 EXPOSE 50051
+VOLUME /ssl
 
 WORKDIR /home/appuser/hub
-CMD /home/appuser/cmd.sh
+CMD cmd.sh
